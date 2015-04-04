@@ -217,7 +217,7 @@ a:focus, *:focus {
     }
     .top-nav{
     	position: absolute;
-    	top: 12vw;
+    	top: 100px;
 	    -webkit-transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
 	    transform: translateY(-50%);
