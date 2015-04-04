@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="Ezra Miller" name="author" />
+		<meta content="Travis Scott Official Website" name="description" />
+		<meta content="Travis Scott" property="og:title" />
+		<meta content="Travis Scott Official Website" property="og:description" />
+		<meta content="http://www.travisscott.com" property="og:url" />
+		<meta content="Travis Scott" property="og:site_name" />
+		<meta content="http://travisscott.com/img/fb.png" property="og:image" />
+		<title>Travis Scott</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/2.css">
+		<link rel="icon" href="tsimages/favicon.ico" type="image/x-icon" />
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="js/vendor/jquery-1.11.2.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="no-overflow">
+			<ul class="nav">
+				<li><a href="http://travisscott.myshopify.com/">MERCH</a></li>
+				<li><a href="http://travis-x.tumblr.com">BLOG</a></li>
+				<li><a id="photos" href="#photos">PHOTOS</a></li>
+				<li><a id="shows" href="#shows">SHOWS</a></li>
+				<li><a id="music" href="#music">MUSIC</a></li>
+				<li><a id="videos" href="#videos">VIDEOS</a></li>
+			</ul>
+			<!-- <a href="" id="menu-button">MENU</a> -->
+				<ul class="mobile-nav">
+					<li><a href="http://travisscott.myshopify.com/">MERCH</a></li>
+					<li><a href="http://travis-x.tumblr.com">BLOG</a></li>
+					<li><a id="photos-mobile" href="#photos">PHOTOS</a></li>
+								<h1 class="did-you-mobile">
+					DID
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					YOU
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					SURVIVE
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					THE
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					RODEO
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					?
+				</h1>
+					<li><a id="shows-mobile" href="#shows">SHOWS</a></li>
+					<li><a id="music-mobile" href="#music">MUSIC</a></li>
+					<li><a id="videos-mobile" href="#videos">VIDEOS</a></li>
+				</ul>			
+
+
+			<h1 class="header"><a id="home" href="">TRAVIS SCOTT</a></h1>
+			<a class="back-button" href="#">&#60;</a>
+			<div class="red-container">
+				<h1 class="did-you">
+					DID
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					YOU
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					SURVIVE
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					THE
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					RODEO
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					?
+				</h1>
+			</div>
+			<div class="coming-soon">
+				<p>COMING SOON</p>
+			</div>
+			<!-- <img src="img/bigtourimage-3.png" alt=""> -->
+			<img class="first" src="img/new/1.png" alt="">
+			<img src="img/new/2.png" alt="">
+			<img src="img/new/3.png" alt="">
+			<img src="img/new/4.png" alt="">
+			<img src="img/new/5.png" alt="">
+			<img src="img/new/6.png" alt="">
+			<img src="img/new/7.png" alt="">
+			<img src="img/new/8.png" alt="">
+			<img src="img/new/9.png" alt="">
+			<div class="videos">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/RH9kl6XZixo" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/dY5F5EsQwqE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/X4MSlFq8bNI" frameborder="0" allowfullscreen></iframe>
+			</div>			
+			<div class="music">
+				<iframe width="45%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/40174345&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+			<!-- <footer>MADE BY <a href="http://ezramiller.biz/">EZRA</a></footer> -->
+		</div>
+
+		<script>
+			// var menu = document.getElementById("menu-button");
+			// var count = 0;
+			// menu.addEventListener("click", function(e){
+			// 	e.preventDefault();
+			// 	// offscreen = document.getElementById("offscreen");
+			// 	// offscreen.
+
+			// 	if(count%2 ==0){
+			// 		$("body").animate({ left: "50vw" }, "fast");
+			// 		$(".did-you").animate({ left: "50vw" }, "fast");
+			// 		$("body").css("overflow", "hidden");
+			// 	} else{
+			// 		$("body").animate({ left: "0" }, "fast");
+			// 		$(".did-you").animate({ left: "0" }, "fast");
+			// 		$("body").css("overflow", "auto");
+			// 	}
+			// 	count++;
+			// });
+			$("#photos, #shows").click(function(e){
+				e.preventDefault();
+				$(".music, .videos").hide();
+				$("li a").css("text-decoration", "none");
+				$(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".videos").hide();
+				$(".did-you").hide();
+				$(".coming-soon").show();
+			})
+			$("#photos-mobile, #shows-mobile").click(function(e){
+				e.preventDefault();
+				// $(this).css("text-decoration", "underline");
+				// $("img").hide();
+				$(".music, .videos").hide();
+				$(".mobile-nav").css("display", "none");
+				// $(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".videos").hide();
+				$(".did-you-mobile").hide();
+				$(".coming-soon").show();
+			})
+			$("#videos").click(function(e){
+				e.preventDefault();
+				window.history.pushState("object or string","Title", "../../../videos");
+
+				// $(this).css("text-decoration", "underline");
+				// $("img").hide();
+				$(".music, .coming-soon").hide();
+				$("li a").css("text-decoration", "none");
+				$(this).css("text-decoration", "underline");
+				// $(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".did-you").hide();
+				$(".videos").show();
+			})
+
+			$("#videos-mobile").click(function(e){
+				e.preventDefault();
+				$(".music, .coming-soon").hide();
+				// $(this).css("text-decoration", "underline");
+				// $("img").hide();
+				// $(".mobile-nav li a").css("text-decoration", "none");
+				// $(this).css("text-decoration", "underline");
+				$(".mobile-nav").css("display", "none");
+				// $(".nav").css("display", "none");
+				// $(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".did-you-mobile").hide();
+				$(".videos").show();
+			})
+			$("#music").click(function(e){
+				e.preventDefault();
+				$(".videos, .coming-soon").hide();
+				// $(this).css("text-decoration", "underline");
+				// $("img").hide();
+				$("li a").css("text-decoration", "none");
+				$(this).css("text-decoration", "underline");
+				// $(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".did-you").hide();
+				$(".music").show();
+			})
+			$("#music-mobile").click(function(e){
+				e.preventDefault();
+				$(".videos, .coming-soon").hide();
+				// $(this).css("text-decoration", "underline");
+				// $("img").hide();
+				// $(".mobile-nav li a").css("text-decoration", "none");
+				// $(this).css("text-decoration", "underline");
+				$(".mobile-nav").css("display", "none");
+				// $(".nav").css("display", "none");
+				// $(this).css("text-decoration", "underline");
+				$("img").hide();
+				$(".did-you-mobile").hide();
+				$(".music").show();
+			})
+
+			$("#music-mobile, #videos-mobile, #shows-mobile, #photos-mobile").click(function(e){
+				e.preventDefault();
+				$(".back-button").show();
+			});
+			$(".back-button").click(function(e){
+				e.preventDefault();
+				$(".videos, .coming-soon, .music").hide();
+				$(".mobile-nav, .did-you-mobile, img").show();
+				$(".back-button").hide();
+			})
+
+
+			$(window).on('hashchange', function(e) {
+			  console.log(e);
+			});
+			// $("#home").click(function(e){
+			// 	e.preventDefault();
+			// 	if($(".mobile-nav").css("display") == "none"){
+			// 		$(".did-you, .nav, img").show();
+			// 		$(".music, .coming-soon, .videos, .mobile-nav, .did-you-mobile").hide();
+			// 		$("li a").css("text-decoration", "none");
+			// 	} else {
+			// 		$(".did-you-mobile, .mobile-nav, img").show();
+			// 		$(".music, .coming-soon, .videos, .nav, .did-you").hide();
+			// 		$("li a").css("text-decoration", "none");
+			// 	}
+			// })
+
+			$(document).ready(function() {
+			    // run test on initial page load
+			    checkSize();
+
+			    // run test on resize of the window
+			    $(window).resize(checkSize);
+			});
+
+			function checkSize(){
+				if ($(".nav").css("display") == "none" ){
+					$("img").show();
+					$(".coming-soon").hide();
+					$(".videos").hide();
+					$(".music").hide();
+					$("#photos, #shows, #videos, #music").css("text-decoration", "none");
+					$(".mobile-nav").show();
+					$(".did-you-mobile").show();
+				}
+				if($(".back-button").css("display", "inline") && window.innerWidth>=700){
+					$(".back-button").css("display", "none");
+				}
+				if(nav.style.display == "none" && window.innerWidth>=700){
+					nav.style.display = "block";
+				}
+				// if ($(".nav").css("display") == "block" ){
+				// 	$("img").show();
+				// 	$(".coming-soon").hide();
+				// 	$(".videos").hide();
+				// 	$(".music").hide();
+				// 	$("#photos, #shows, #videos, #music").css("text-decoration", "none");
+				// 	$(".nav").show();
+				// }
+			}
+
+
+		</script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61497885-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

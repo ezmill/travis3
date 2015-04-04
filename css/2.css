@@ -1,0 +1,268 @@
+body{
+	margin: 0;
+	background: #FAEC21;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.no-overflow{
+	overflow-x:hidden;
+}
+.img-container{
+
+}
+img{
+	vertical-align: middle;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	width: 100vw;
+	z-index: -1;
+	pointer-events: none;
+}
+@font-face {
+  font-family: 'Franklin Gothic Extra Condensed';
+  src: url('Franklin Gothic Extra Condensed.ttf');
+}
+@font-face {
+  font-family: 'InsideOut';
+  src: url('Flyerfonts-InsideOut.otf');
+}
+@font-face {
+  font-family: 'Malfunction';
+  src: url('Flyerfonts-Malfunction.otf');
+}
+
+.header{
+	margin: 0 auto;
+	width: 100vw;
+	text-align: center;
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+	position: absolute;
+	/*top: 125px;*/
+	margin-top: 6vw;
+		
+	/*z-index: -1;*/
+	letter-spacing: 10px;
+	font-family: 'Franklin Gothic Extra Condensed';
+}
+.header a{
+	z-index: 1;
+}
+.back-button{
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+	margin: 0 auto;
+	width: 100vw;
+	text-align: center;
+	display: none;
+	position: absolute;
+	margin-top: 100px;
+	font-family: 'Franklin Gothic Extra Condensed';
+	font-size: 14px;
+
+
+}
+.nav{
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    left: 50px; 
+    z-index: 2;  
+}
+.mobile-nav{
+	display: none;
+	position: absolute;
+    /*top: 30px;*/
+    /*left: 50px;   */
+	list-style: none;
+}
+#offscreen{
+	display: none;
+	position: absolute;
+	/*left: -50vw;*/
+	top: 0;
+}
+#menu-button{
+	display: none;
+	font-family: "InsideOut";
+	margin: 30px 0;
+	position: absolute;
+	top: 100px;
+    left: 25px;  
+	color: black;
+	text-decoration: none;
+}
+.coming-soon{
+	display:none;
+	position: absolute;
+	top: 50%;
+	width: 100vw;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.coming-soon p{
+		font-family: "InsideOut";
+
+	font-size: 14px;
+
+	color: black;
+
+	text-align: center;
+
+}
+
+li{
+	margin: 30px 0;
+	font-family: "InsideOut";
+	font-size: 14px;
+}
+a{
+	color: black;
+	text-decoration: none;
+
+}
+a:focus, *:focus {
+    noFocusLine: expression(this.onFocus=this.blur());
+}
+:focus{
+    outline:0; /*removes the dotted border*/
+}
+.red-container{
+	width: 100vw;
+	position: relative;
+}
+.did-you{
+	position: fixed;
+	top: 50vh;
+	font-family: 'Franklin Gothic Extra Condensed';
+	-ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+    font-size: 4vw;
+    /*letter-spacing: 20px;*/
+    color: red;
+    margin: 0 0 0 5vw;
+    width: 100vw;
+}
+
+.did-you-mobile{
+	display: none;
+	/*top: 50vh;*/
+	/*position: fixed;*/
+	font-family: 'Franklin Gothic Extra Condensed';
+	-ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+    color: red;
+    /*margin: 0 0 0 5vw;*/
+    width: 100vw;
+}
+.videos, .music{
+	display: none;
+	width: 100vw;
+	margin: 0 auto;
+	/*text-align: center;*/
+	/*position: relative;*/
+	margin-top: 200px;
+	z-index: -1;
+}
+.videos iframe, .music iframe{
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	/*max-width: 700px;*/
+}
+.videos iframe:last-child{
+	margin-bottom: 100px;
+}
+footer{
+	font-family: "Franklin Gothic Extra Condensed";
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+	width: 100vw;
+	margin-bottom: 20px;
+    letter-spacing: 10px;
+	font-size: 18px;
+}
+footer a{
+	text-decoration: underline;
+	color: rgba(255,0,0,0.4);
+}
+@media screen and (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+    #offscreen{
+    	display: block;
+    }
+    li a{
+    	color: white;
+    }
+    img{
+    	width: 600vw;
+    	position: relative;
+    	/*left: 0;*/
+    	margin-left: -200vw;
+    }
+	.first{
+		margin-top: -500px;
+	}
+    li{
+		text-align: center;
+		font-size: 16px;
+	    /*text-shadow: 0px 1px 0px black;*/
+    }
+    .mobile-nav{
+		width: 100vw;
+		padding: 0;
+    	display: block;
+    	/*margin-top: 20vh;*/
+    	position: fixed;
+    	  /*position: relative;*/
+	    top: 50%;
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+
+    }
+    .did-you-mobile{
+		display: none;
+    	font-size: 20px;
+    	display: block;
+    	text-align: center;
+    	margin: 0;
+	}
+    #menu-button{
+    	display: inline;
+    }
+    .did-you{
+    	font-size: 10vw;
+    	display: none;
+    }
+    .header{
+		z-index: 1;
+    }
+    .videos iframe, .music iframe{
+		display: block;
+		margin: 0 auto;
+		margin-top: 100px;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+    .header a{
+    	color: white;
+    }
+    .did-you-mobile{
+    	font-size: 16px;
+    }
+}

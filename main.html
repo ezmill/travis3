@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="Ezra Miller" name="author" />
+		<meta content="Travis Scott Official Website" name="description" />
+		<meta content="Travis Scott" property="og:title" />
+		<meta content="Travis Scott Official Website" property="og:description" />
+		<meta content="http://www.travisscott.com" property="og:url" />
+		<meta content="Travis Scott" property="og:site_name" />
+		<meta content="http://travisscott.com/img/fb.png" property="og:image" />
+		<title>Travis Scott</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/3.css">
+		<link rel="icon" href="tsimages/favicon.ico" type="image/x-icon" />
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="js/vendor/pace.min.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="no-overflow">
+			<div class="header-container">
+				<h1 class="header"><a id="home" href="main.html">TRAVIS SCOTT</a></h1>
+				<a id="back-button" href="main.html">&#60;</a>
+			</div>
+			<div class="nav-container">
+				<ul id="nav">
+					<li><a href="http://travisscott.myshopify.com/">MERCH</a></li>
+					<li><a href="http://travis-x.tumblr.com">BLOG</a></li>
+					<li><a id="photos" href="photos.html">PHOTOS</a></li>
+					<h1 id="did-you-mobile">
+						DID
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						YOU
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						SURVIVE
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						THE
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						RODEO
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						?
+					</h1>
+					<li><a id="shows" href="shows.html">SHOWS</a></li>
+					<li><a id="music" href="music.html">MUSIC</a></li>
+					<li><a id="videos" href="videos.html">VIDEOS</a></li>
+				</ul>
+
+			</div>
+			<div id="main">		
+			</div>
+			<!-- <a href="" id="menu-button">MENU</a> -->
+			<!-- <img src="img/bigtourimage-3.png" alt=""> -->
+
+
+			<!-- <footer>MADE BY <a href="http://ezramiller.biz/">EZRA</a></footer> -->
+		</div>
+
+		<script>
+		var nav = document.getElementById("nav");
+		var back_button = document.getElementById("back-button");
+		var home = document.getElementById("home");
+		var main = document.getElementById("main");
+		var did_you_mobile = document.getElementById("did-you-mobile");
+		var videos = document.getElementById("videos");
+		var music = document.getElementById("music");
+		var photos = document.getElementById("photos");
+		var shows = document.getElementById("shows");
+		var firstLoad = true;
+		setupHistoryClicks();
+		function setupHistoryClicks() {
+		  addClicker(videos);
+		  addClicker(music);
+		  addClicker(photos);
+		  addClicker(shows);
+		  addClicker(back_button);
+		  addClicker(home);
+		}
+		function addClicker(link) {
+		  link.addEventListener("click", function(e) {
+		    swapContent(link.href);
+		    history.pushState(null, null, link.href);
+		    e.preventDefault();
+		  }, false);
+		}
+
+		function swapContent(href, callback) {
+		  var req = new XMLHttpRequest();
+		  req.open("GET",
+		           "http://ezmill.github.io/travis2/templates/" +
+		             href.split("/").pop(),
+		           false);
+			req.send(null);
+		    if (req.status == 200) {
+		    	if(window.innerWidth >= 701 || firstLoad){
+				    main.innerHTML = req.responseText;
+				    firstLoad = false;
+		    	} else {
+				    main.innerHTML = req.responseText;
+				    back_button.style.display = "inline";
+    		    	if(href == "http://ezmill.github.io/travis2/main.html"){ //to-do
+					    nav.style.display = "block";
+    				    back_button.style.display = "none";
+			    	} else {
+					    nav.style.display = "none";
+			    	}
+		    	}
+
+			    setupHistoryClicks();
+		    return true;
+		  }
+		  return false;
+		}
+		// back_button.addEventListener("click", function(e){
+		// 	firstLoad = true;
+		// 	// swapContent("images.html");
+		//     history.pushState(null, null, "images.html");
+
+		// })
+		window.addEventListener("popstate", function(e) {
+		    swapContent(location.pathname);
+		});
+
+		window.addEventListener("resize", function(e){
+			if(back_button.style.display == "inline" && window.innerWidth>=700){
+				back_button.style.display = "none";
+			}
+			if(nav.style.display == "none" && window.innerWidth>=700){
+				nav.style.display = "block";
+			}
+
+		});
+
+		document.body.onload = function(e){
+			swapContent("main.html");
+		    history.pushState(null, null, "main.html");
+		    // e.preventDefault();
+		}
+
+
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-61497885-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
