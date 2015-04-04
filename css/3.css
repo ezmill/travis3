@@ -264,7 +264,7 @@ a:focus, *:focus {
 }
 
 @media screen and (max-width: 400px) {
-    .header a{
+    .home-header{
     	color: white;
     }
     #did-you-mobile{
