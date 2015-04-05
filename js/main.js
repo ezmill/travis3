@@ -16,4 +16,11 @@ window.addEventListener("resize", function(e){
     nav.style.display = "block";
   }
 
+
 });
+
+$(".did-you").circleType({radius: 1200});
+$(".did-you").css("position", "fixed");
+$(".did-you").css("margin", "0");
+$("#did-you-mobile").circleType({radius: 400});
+$("#did-you-mobile").css("position", "fixed");
