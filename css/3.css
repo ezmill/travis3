@@ -180,18 +180,22 @@ a:focus, *:focus {
 	margin-bottom: 100px;
 }
 
+.photos{
+	margin-left: 10px;
+}
+
 @media screen and (max-width: 700px) {
 
     li a{
     	color: white;
     }
-    img{
+    .images img{
     	width: 600vw;
     	position: relative;
     	/*left: 0;*/
     	margin-left: -200vw;
     }
-	.first{
+	.images .first{
 		margin-top: -500px;
 	}
     li{
@@ -256,6 +260,14 @@ a:focus, *:focus {
 	}
 	.did-you{
 		display: none;
+	}
+
+	.photos{
+		margin-top: 40px;
+	}
+
+	.maps{
+		margin-top: 80px;
 	}
 
 }
