@@ -151,9 +151,6 @@ a:focus, *:focus {
 }
 .did-you, #did-you-mobile{
 	font-family: 'Franklin Gothic Extra Condensed';
-	-ms-transform: rotate(1deg); /* IE 9 */
-    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
-    transform: rotate(1deg);
     color: red;
     width: 100vw;
 }
@@ -264,7 +261,7 @@ a:focus, *:focus {
 }
 
 @media screen and (max-width: 400px) {
-    .home-header{
+    .home-header a{
     	color: white;
     }
     #did-you-mobile{
