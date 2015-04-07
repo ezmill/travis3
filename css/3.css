@@ -179,7 +179,12 @@ a:focus, *:focus {
 .videos iframe:last-child{
 	margin-bottom: 100px;
 }
-
+.maps-mobile{
+	display: none;
+}
+.maps-desktop{
+	display: block;
+}
 
 @media screen and (max-width: 700px) {
 
@@ -263,9 +268,12 @@ a:focus, *:focus {
 	.photos{
 		margin-top: 40px;
 	}
-
-	.maps{
-		margin-top: 80px;
+	.maps-desktop{
+		display: none;
+	}
+	.maps-mobile{
+		display: block;
+		margin-top: 100px;
 	}
 
 }
