@@ -38,7 +38,7 @@ function resizeend() {
 			$(".did-you").css("margin", "0");
 			$(".did-you").css("font-size", "4vw");
         } else {
-        	$("#did-you-mobile").circleType({radius: 400});
+        	$("#did-you-mobile").circleType({radius: 300});
 			$("#did-you-mobile").css("position", "fixed");
         }
     }               
@@ -51,7 +51,7 @@ document.body.onload = function(){
 		$(".did-you").css("margin", "0");
 		$(".did-you").css("font-size", "4vw");
 	} else{
-		$("#did-you-mobile").circleType({radius: 400});
+		$("#did-you-mobile").circleType({radius: 300});
 		$("#did-you-mobile").css("position", "fixed");
 	}
 }
