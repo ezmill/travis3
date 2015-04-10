@@ -58,9 +58,9 @@ img{
 	margin: 0 auto;
 	width: 100vw;
 	text-align: center;
-    -ms-transform: rotate(1deg); /* IE 9 */
-    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
-    transform: rotate(1deg);
+    /*-ms-transform: rotate(1deg); /* IE 9 */
+    /*-webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    /*transform: rotate(1deg);*/
 	position: absolute;
 	/*top: 125px;*/
 	margin-top: 6vw;
