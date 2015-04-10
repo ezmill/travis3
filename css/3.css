@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: red;
+	background: #fb0f1c;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@ body{
 }
 
 .pace .pace-progress {
-  background: red;
+  background: #fb0f1c;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -152,7 +152,7 @@ a:focus, *:focus {
 }
 .did-you, #did-you-mobile{
 	font-family: 'Franklin Gothic Extra Condensed';
-    color: red;
+    color: #fb0f1c;
     width: 100vw;
 }
 .did-you{
