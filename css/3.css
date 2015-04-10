@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: #FAEC21;
+	background: red;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -65,7 +65,7 @@ img{
 	/*top: 125px;*/
 	margin-top: 6vw;
 		
-	/*z-index: -1;*/
+	z-index: 99;
 	letter-spacing: 10px;
 	font-family: 'Franklin Gothic Extra Condensed';
 }
@@ -91,7 +91,7 @@ img{
     position: absolute;
     top: 30px;
     left: 50px; 
-    z-index: 2;  
+    z-index: 100;  
 }
 #offscreen{
 	display: none;
@@ -147,7 +147,8 @@ a:focus, *:focus {
 }
 .red-container{
 	width: 100vw;
-	position: relative;
+	position: fixed;
+	top: 0
 }
 .did-you, #did-you-mobile{
 	font-family: 'Franklin Gothic Extra Condensed';
@@ -156,7 +157,7 @@ a:focus, *:focus {
 }
 .did-you{
 	position: fixed;
-	top: 50vh;
+	/*top: 50vh;*/
     font-size: 4vw;
 }
 #did-you-mobile{
