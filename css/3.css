@@ -161,7 +161,6 @@ a:focus, *:focus {
 .did-you-image-link{
 	position: fixed;
 	display: block;
-	top: 45%;
 	top: 45vh;
 	top: -webkit-calc(50vh - 50px);
 	top: -moz-calc(50vh - 50px);
